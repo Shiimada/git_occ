@@ -1,0 +1,218 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #000000;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color:#FFD5EC	;
+    color:#FFFFCC	;
+    display: inline-block;
+     text-align: center;
+    // padding: 5px 10px 10px 10px;
+    // border: 3px solid #aaa;
+    height: 100px;
+   
+}
+
+.container {
+   width: 100%;
+  position: relative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+   padding-bottom: 30px;
+}
+
+.inline-block_test {
+    display: inline-block;      /* インラインブロック要素にする */          /* 余白指定 */
+    height: 400px;     
+     width: 100%;
+      padding: 10px 0px 0px 0px;
+      columns: 2;
+      margin: 0px;
+      
+}
+.inline-block_test2 {
+    display: inline-block;      /* インラインブロック要素にする */          /* 余白指定 */
+    height: 400px;     
+     width: 100%;
+}
+.box1 {
+    display: inline-block; 
+    height: 350px;
+    width: 15%;
+}
+.box2 {
+    display: inline-block;    
+    height: 350px;
+    width: 62%;
+    color: black;/*文字色*/
+    background: #FFF;
+    border: solid 3px gray;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    overflow-y:scroll;
+    float: left;
+    padding: 10px;
+}
+.box3 {
+    // padding: 10px;
+    display: inline-block;    
+    height: 100px;
+    width: 30%;
+    color: black;/*文字色*/
+    background: #FFF;
+    border: solid 3px gray;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    margin: 0px 0px 10px 10px;
+    overflow-y:scroll;
+    // padding-bottom: 100px;
+}
+.box4 {
+    // padding: 10px;
+    display: inline-block;    
+    height: 100px;
+    width: 30%;
+    color: black;/*文字色*/
+    background: #FFF;
+    border: solid 3px gray;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    margin: 10px 0px 10px 10px;
+    overflow-y:scroll;
+}
+.box5 {
+    // padding: 10px;
+    display: inline-block;    
+    height: 100px;
+    width: 62%;
+    color: black;/*文字色*/
+    background: #FFF;
+    border: solid 3px gray;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    overflow-y:scroll;
+    // padding-bottom: 100px;
+}
+
+.box6 {
+    display: inline-block;    
+    height: 100px;
+    width: 62%;
+    color: black;/*文字色*/
+    background: #FFF;
+    border: solid 3px gray;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    overflow-y:scroll;
+}
+.flex{
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.flex > *{
+//   min-width: 30%
+width: 50%;
+;
+  flex-basis: 30%;
+  background: #fff;
+  font-size: 64px;
+  text-align: right
+
+
+}
+.flex,
+.flex > *{
+  // border: 3px solid #aaa;
+}
+
+.list{
+    // min-width: 30%;
+    width: 30%;
+    height: 50%;
+	margin: 10px 4px 10px 4px;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 2px 2px 2px 2px;
+	 border: 3px solid #aaa;
+	font-size: small;
+	
+}
+
+.list li{
+	margin: 20px 20px 20px 20px;
+// 	float: left;
+	transition: .8s;
+	font-size: small;
+	color: #FFFFFF;
+}
+
+.list-mv02{
+	opacity: 0;
+		padding-bottom: 10px;
+}
+.mv02{
+	opacity: 1.0;
+		padding-bottom: 30px;
+		
+}
+
+
+form {
+
+  input,textarea {
+    width: 60%;
+    border-radius: 5px;
+    font-family: "游ゴシック", "YuGothic";
+    // padding-bottom: 100px;
+  }
+  input[type="submit"] {
+    width: 30%;
+    border-radius: 10px;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    
+    &:hover {
+     
+    }
+  }
+  
+}
+.pagination>li>a {          
+  border: none;     /*枠線をなくす*/
+  color: #696969;   /*文字の色を変える*/
+  font-size: medium;
+}
+
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {     
+  background: #93c9ff;     /*背景の色を変える*/
+  border-radius: 15px;     /*角を丸くする*/
+  font-size: medium;
+}
+
+/*ホバー時のデザイン*/
+.pagination>li>a:hover {        
+  border-radius: 15px;    /*角を丸くする*/
+  font-size: medium;
+}
+
+footer{
+    width: 100%;
+    background-color:#FFD5EC	;
+    color:#336666;
+    text-align: center;
+    padding: 10px 0;
+  
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}

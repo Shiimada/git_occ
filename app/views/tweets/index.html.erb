@@ -1,0 +1,22 @@
+<% if user_signed_in? %> <!-- ユーザーがログインしているか調べる -->
+  <!-- ユーザーがログインしていた時の処理 -->
+  
+<div class="container">
+
+<div class="flex">
+
+   <% @tweets.each do |tweet| %>
+    <ul class="list">
+     <li class="list-mv02"" style="background-image: url(<%= tweet.image %>);">
+      <%= simple_format(tweet.text) %>
+      <span class="name"><%= tweet.name %></span>
+      <p><%= link_to '詳細', "/tweets/#{tweet.id}", method: :get %></li>
+     </li>
+	</ul>
+   <% end %>
+    <%= paginate(@tweets) %>
+	 
+
+</div>
+</div>
+

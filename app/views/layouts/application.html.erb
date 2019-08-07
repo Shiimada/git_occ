@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Occ</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.inview.js"></script>
+    
+      <!-- コード追加　Bootstrap CSS読み込みコード-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- コード追加　Bootstrap JavaScript読み込みコード-->
+  </head>
+
+  <body>
+     <div class="container">
+       <header>
+             <h1> &nbsp;&nbsp;&nbsp;&nbsp;One Coin Cooking!!!!!</h1>
+              <nav>
+              <ul>
+               <li style="display:inline"><a href="/mitames/new">投稿する</a></li>
+               &nbsp; <li style="display:inline"><a href="menu01.html">login</a></li> 
+      
+       </ul>
+     </nav>
+   </header>
+    <%= yield %>
+    <footer>
+        <nav>
+          <ul>
+           <li style="display:inline"><a href="index.html">ホーム</a></li>
+           <li style="display:inline"><a href="menu01.html">メニュー1</a></li> 
+           <li style="display:inline"><a href="menu02.html">メニュー2</a></li>
+          </ul>
+      </nav>
+    </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="inline-block_test">
+  
+  <div class="contents row">
+ <%= form_for @tweet do |f| %>
+    
+    <center><h3>投稿する </h3></center>
+    
+      <div class="form-group file">
+        <%= f.file_field :image, class: "form-control floating-label", placeholder: "画像アップロード" %>
+      </div>
+      
+       <p>
+        <div class="col-lg-10">
+           <%= f.label :name, "名前" %>
+           <%= f.text_field :name, placeholder: 'nickname' %>
+        </div>
+        </div></center></p>
+        
+        <div align="left">
+        <div class="col-lg-15">
+          <p><%= f.label :text, "レシピ" %></p>
+          <%= f.text_field :text, placeholder: "レシピ", class: "form-control" %>
+         </div>
+         
+          <div class="col-lg-15">
+          <p><%= f.label :name1, "材料１" %></p>
+          <%= f.text_field :name1, placeholder: "レシピ", class: "form-control" %>
+         </div>
+         
+          <div class="col-lg-15">
+          <p><%= f.label :name2, "材料２" %></p>
+          <%= f.text_field :name2, placeholder: "レシピ", class: "form-control" %>
+         </div>
+         
+          <div class="col-lg-15">
+          <p><%= f.label :name3, "材料３" %></p>
+          <%= f.text_field :name3, placeholder: "レシピ", class: "form-control" %>
+         </div>
+         
+          <div class="col-lg-15">
+          <p><%= f.label :name4, "材料４" %></p>
+          <%= f.text_field :name4, placeholder: "レシピ", class: "form-control" %>
+         </div>
+         
+          <div class="col-lg-15">
+          <p><%= f.label :name5, "材料５" %></p>
+          <%= f.text_field :name5, placeholder: "レシピ", class: "form-control" %>
+         </div>
+    
+      <div class="actions">
+        <center><%= f.submit %></center>
+      </div>
+      <% end %>
+    </div>
+    </div>
+</div>

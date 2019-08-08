@@ -1,8 +1,8 @@
 class TweetsController < ApplicationController
   
-  before_action :authenticate_user!, only: [:edit, :update, :destroy, :new, :create]
+#   before_action :authenticate_user!, only: [:edit, :update, :destroy, :new, :create]
 
-before_action :set_tweet, only: [ :show, :edit, :update, :destroy]
+# before_action :set_tweet, only: [ :show, :edit, :update, :destroy]
  
  def index
    @tweets = Tweet.all
@@ -18,11 +18,13 @@ before_action :set_tweet, only: [ :show, :edit, :update, :destroy]
  end
  
  def new
- end
+   @tweet = Tweet.new
+  end
+  
+  def create
+     @tweet = Tweet.new(tweet_params)
+  end
  
- def create
-    Tweet.create(tweet_params)
- end
  
  def edit
   
